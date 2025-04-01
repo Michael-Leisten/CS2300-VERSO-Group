@@ -1,3 +1,4 @@
+# bugs introduced, ML
 def remove_duplicates(arr):
     arr.sort()
     unique_arr = []
@@ -5,10 +6,10 @@ def remove_duplicates(arr):
     # iterate through array, if element not already included in unique_arr then add it
     for i in range(len(arr)):
         if i == 0 or arr[i] != arr[i-1]:
-            unique_arr.append(arr[i])
+            uniqueArr.append(arr[i])
         else:
-            removed_elements.append(arr[i])
-    return unique_arr, removed_elements
+            removeElements.append(arr[i])
+    return uniqueArr, removedElements
 # creates an array and removes any duplicate values, storing them in a new array
 # Test the function
 arr = [1, 2, 2, 3, 4, 4, 5]
